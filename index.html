@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/eviolite-b" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Pokemon Team Creator</title>
+  </head>
+  <body>
+    <div class="logo">
+
+      <h1>Pokemon Team Creator</h1>
+      <span>created by Ian Holsteen</span>
+    </div>
+    
+    <div class="search-title">
+      <h3>Type the name or number of your desired Pokemon:</h3>
+    </div>
+
+    <div class="search">
+      
+      <form id="poke-search">
+      
+        <input type="text" placeholder="Enter Pokemon" id="pokeId" name="pokeId" />
+        <input type="submit" value="🔎" />
+        <button id="rand">🎲</button>
+      </form>
+    
+    </div>
+
+    <div class="pokemonCard">
+        
+      <div id="detailed-info">
+
+        <small id="idNum"></small>
+        <p id="name"></p>
+        
+        <img
+          id="image"
+          src=""
+          alt=""
+        />
+
+        <div class='stats'>
+          <span id="hp"></span>
+          <span id="attack"></span>
+          <span id="defense"></span>
+        </div>
+        
+        <h4 id="type"></h4>
+      </div>
+      
+      <div id="addteam-spot">
+        <button id="team-add">Add to my team</button>
+      </div>
+
+      <div id="teamText">My Team: </div>
+
+    </div>
+
+    <div id="pokemon-bar"></div>
+    
+    <div id="button-spot">
+
+      <button id="reset-team">Reset Team</button>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
+
+<!-- bug: "#26de81",
+dragon: "#ffeaa7",
+electric: "#fed330",
+fairy: "#FF0069",
+fighting: "#30336b",
+fire: "#f0932b",
+flying: "#81ecec",
+grass: "00b894",
+ground: "#EFB549",
+ghost: "#a55ea",
+ice: "#74b9ff"
+normal: "#95afc0",
+poison: "#6c5ce7",
+psychic: "#a29bfe",
+rock: "#2d3436",
+water: "#0190FF" -->

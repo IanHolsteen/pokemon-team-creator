@@ -121,9 +121,9 @@ addToTeamBtn.onclick = () => {
 }
 
 resetBtn.onclick = () => {
-    // addToTeamBtn.textContent = 'Add to my team';
-    // addToTeamBtn.disabled = false;
-    window.location.reload();
+    addToTeamBtn.textContent = 'Add to my team';
+    addToTeamBtn.disabled = false;
+    // window.location.reload();
 }
 
 randBtn.addEventListener('click', randPoke);

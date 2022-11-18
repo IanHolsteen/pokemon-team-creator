@@ -29,7 +29,8 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 3vh;
+  padding-bottom: 2vh;
+  padding-top: 3vh;
   color: black;
   text-align: center;
   width: max;
@@ -37,7 +38,7 @@ html {
   grid-template-areas: "a a a a a a";
   gap: 10px;
   grid-auto-rows: 100px;
-  height: 160px;
+  /* height: 160px; */
 }
   
 #pokemon-bar span {
@@ -134,12 +135,13 @@ input[type="text"] {
 }
 
 #deleteMon{
+  position: absolute;
   font-size: xx-small;
   background-color:  rgb(255, 255, 255);
 }
 
 #name{
-  background-color: aliceblue;
+  background-color: rgb(249, 249, 249);
   border-radius: 20%;
   text-align: center;
   width:inherit;

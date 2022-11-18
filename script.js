@@ -116,7 +116,7 @@ function makeTeam() {
 addToTeamBtn.onclick = () => {
     let teamNum = team.getElementsByTagName('div').length;
     if (teamNum === 5) addToTeamBtn.disabled = true;
-    if (teamNum === 5) addToTeamBtn.textContent = "That's the maximum number! Reset Team Below! ⬇️";
+    if (teamNum === 5) addToTeamBtn.textContent = "That's the maximum number! Reset or remove a Pokemon below! ⬇️";
     if (teamNum === 4) addToTeamBtn.disabled = false;
 }
 

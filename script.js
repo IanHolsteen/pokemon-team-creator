@@ -96,15 +96,15 @@ function makeTeam() {
 
         let deleteMon = document.createElement('button')
         deleteMon.id = 'deleteMon'
-        deleteMon.textContent = "remove";
+        deleteMon.textContent = "❌";
         teamPoke.appendChild(deleteMon);
         
 
         deleteMon.addEventListener('click', (e) => { 
             teamPoke.remove()
             let teamNum = team.getElementsByTagName('div').length;
-            if (teamNum <= 4) addToTeamBtn.disabled = false;
-            if (teamNum <= 4) addToTeamBtn.textContent = 'Add to my team'
+            if (teamNum <= 5) addToTeamBtn.disabled = false;
+            if (teamNum <= 5) addToTeamBtn.textContent = 'Add to my team'
         })
         team.append(teamPoke)
 
@@ -116,7 +116,7 @@ function makeTeam() {
 addToTeamBtn.onclick = () => {
     let teamNum = team.getElementsByTagName('div').length;
     if (teamNum === 5) addToTeamBtn.disabled = true;
-    if (teamNum === 5) addToTeamBtn.textContent = "Reset Team!";
+    if (teamNum === 5) addToTeamBtn.textContent = "That's the maximum number! Reset Team Below! ⬇️";
     if (teamNum === 4) addToTeamBtn.disabled = false;
 }
 

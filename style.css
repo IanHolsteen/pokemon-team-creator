@@ -134,9 +134,8 @@ input[type="text"] {
 }
 
 #deleteMon{
-
-  margin: 10px;
-  background-color:  black;
+  font-size: xx-small;
+  background-color:  rgb(255, 255, 255);
 }
 
 #name{
@@ -164,6 +163,8 @@ input[type="text"] {
 
 #pokemon-bar div{
   margin: auto;
+  align-items: baseline;
+  text-align: center;
 }
 
 #teamText{
@@ -183,3 +184,4 @@ input[type="text"] {
   align-items: center;
   justify-content: space-between;
 }
+
